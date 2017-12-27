@@ -1,0 +1,38 @@
+html
+{
+	font-size: 75%;
+
+	@include breakpoint( 1 )
+	{
+		font-size: 80%;
+	}
+
+	@include breakpoint( 2 )
+	{
+		font-size: 90%;
+	}
+
+	@include breakpoint( 4 )
+	{
+		font-size: 100%;
+	}
+
+	@include breakpoint( 6 )
+	{
+		font-size: 110%;
+	}
+
+	@include breakpoint( 9 )
+	{
+		font-size: 120%;
+	}
+}
+
+body
+{
+	@include default-font;
+	background-color: $color01;
+	background-image: url( '../../assets/img/logo.svg' );
+	background-size: 100% 50vh;
+	background-position: top left;
+}

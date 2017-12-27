@@ -1,0 +1,41 @@
+@mixin default-font
+{
+	font-family: Roboto Condensed, sans-serif;
+}
+
+@mixin title-font
+{
+	font-family: Montserrat, sans-serif;
+}
+
+@mixin title( $color: $color01 )
+{
+	@include title-font;
+	line-height: 1.35;
+	font-size: 2rem;
+	font-weight: bold;
+	color: $color;
+
+	@include breakpoint( 3 )
+	{
+		font-size: 2.5rem;
+	}
+}
+
+@mixin vertical-button( $color: $color01 )
+{
+	border: 2px solid $color;
+	line-height: 1;
+	padding: $rule / 3 $rule / 6;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: $color;
+}
+
+@mixin paragraph( $color: $color01 )
+{
+	font-size: 1.35rem;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	color: $color;
+}

@@ -1,0 +1,11 @@
+#wrapper
+{
+	display: flex;
+	padding: $rule;
+	min-height: 100vh;
+
+	@include breakpoint( 3 )
+	{
+		padding: $rule * 2;
+	}
+}

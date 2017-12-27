@@ -1,0 +1,28 @@
+.content-side
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: $rule;
+
+	@include breakpoint( 3 )
+	{
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 40%;
+		padding-right: $rule;
+		margin-bottom: 0;
+	}
+}
+
+.download
+{
+	flex-grow: 0;
+	@include vertical-button;
+
+	@include breakpoint( 3 )
+	{
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
+}

@@ -1,0 +1,20 @@
+#content
+{
+	display: flex;
+	flex-direction: column;
+	padding: $rule;
+	background-color: $color02;
+
+	@include breakpoint( 3 )
+	{
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: $rule * 2 $rule * 3;
+	}
+
+	@include breakpoint( 5 )
+	{
+		padding: $rule * 4 $rule * 6;
+	}
+}

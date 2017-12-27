@@ -1,0 +1,47 @@
+.social
+{
+	display: flex;
+
+	@include breakpoint( 3 )
+	{
+		flex-direction: column;
+		margin-bottom: $rule;
+	}
+
+	li
+	{
+		margin-right: $rule / 3;
+
+		a
+		{
+			display: block;
+			width: $rule;
+			height: $rule;
+			border-radius: 50%;
+			text-indent: -9999px;
+			background-color: $color01;
+			background-position: center center;
+			background-size: contain;
+		}
+
+		&.mail a
+		{
+			background-image: url( '../../assets/img/mail.svg' );
+		}
+
+		&.linkedin a
+		{
+			background-image: url( '../../assets/img/linkedin.svg' );
+		}
+
+		&.tumblr a
+		{
+			background-image: url( '../../assets/img/tumblr.svg' );
+		}
+
+		@include breakpoint( 3 )
+		{
+			margin-bottom: $rule / 3;
+		}
+	}
+}

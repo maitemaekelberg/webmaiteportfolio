@@ -1,0 +1,10 @@
+.intro
+{
+	@include title;
+	margin-bottom: $rule;
+
+	h1
+	{
+		text-transform: uppercase;
+	}
+}
